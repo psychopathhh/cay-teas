@@ -1,0 +1,32 @@
+.reasons {
+    padding: 2rem;
+    &__container {
+        display: flex;
+        gap: 5rem;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 2rem 0;
+        padding: 0;
+        justify-content: center;
+    }
+    &__item {
+        box-shadow: $shadow;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-image {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 0.5rem;
+        }
+        &-heading {
+            font-size: 26px;
+            color: $secondary-text-color;
+            font-family: 'Leafy';
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import '_varabales';
+@import '_fonts';
+
+@import './components/_header';
+@import './components/_hero';
+@import './components/_about';
+@import './components/_best-reasons';
+@import './components/_galery';
+
+@import './useful-elements/_contact-button';
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: $bg-color;
+    overflow-x: hidden;
+}
+p::selection, h1::selection, h2::selection, h3::selection, span::selection {
+    background: rgba(#00f21c, 0.18);
+  }
+body::-webkit-scrollbar {
+    width: 10px; /* Ширина всего элемента навигации */
+  }
+  
+body::-webkit-scrollbar-track {
+background: #fff; /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: $primary-text-color; /* Цвет бегунка */
+border-radius: 20px; /* Округление бегунка */
+border: 3px solid $primary-text-color; /* Оформление границ бегунка */
+}
+img {
+    object-fit: cover;
+    object-position: center;
+}
+.heading-shadow {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    letter-spacing: .5rem;
+    font-family: 'Roboto Black';
+    font-weight: 900;
+    font-style: normal;
+    color: $primary-text-color;
+    text-shadow: 1px 2px $bg-color, 2px 3px $secondary-text-color;
+}
+.heading {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-family: 'Roboto Regular';
+    font-weight: 400;
+    font-style: normal;
+    color: $primary-text-color;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (max-width: 557px) {
+    .heading {
+        font-size: 40px;
+    }
+}
