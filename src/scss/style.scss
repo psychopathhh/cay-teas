@@ -5,9 +5,16 @@
 @import './components/_hero';
 @import './components/_about';
 @import './components/_best-reasons';
-@import './components/_galery';
+@import './components/_gallery';
+@import './components/_menu';
+@import './components/_services';
+@import './components/_cafe-gourmand';
+@import './components/_contact';
+@import './components/_footer';
 
 @import './useful-elements/_contact-button';
+@import './useful-elements/_read-more';
+@import './useful-elements/_social-media';
 
 html {
     scroll-behavior: smooth;
@@ -29,25 +36,22 @@ background: #fff; /* Цвет дорожки */
 }
 
 body::-webkit-scrollbar-thumb {
-background-color: $primary-text-color; /* Цвет бегунка */
+background-color: $contrast-color; /* Цвет бегунка */
 border-radius: 20px; /* Округление бегунка */
-border: 3px solid $primary-text-color; /* Оформление границ бегунка */
+border: 2px solid $contrast-color; /* Оформление границ бегунка */
 }
 img {
     object-fit: cover;
     object-position: center;
 }
-.heading-shadow {
-    text-align: center;
-    text-transform: capitalize;
+.heading-mini {
     font-size: 40px;
-    letter-spacing: .5rem;
-    font-family: 'Roboto Black';
-    font-weight: 900;
+    color: $secondary-text-color;
+    font-family: 'Leafy';
+    font-weight: 400;
     font-style: normal;
-    color: $primary-text-color;
-    text-shadow: 1px 2px $bg-color, 2px 3px $secondary-text-color;
 }
+
 .heading {
     text-transform: capitalize;
     font-size: 50px;
@@ -58,9 +62,60 @@ img {
     text-align: center;
     box-sizing: border-box;
 }
+.heading-menu {
+    text-align: center;
+    display: block;
+    font-family: 'Roboto Regular';
+    font-size: 40px;
+    text-transform: capitalize;
+    letter-spacing: .5rem;
+    font-weight: 900;
+    text-shadow: 1px 2px #fff, 2px 3px $contrast-color;
+}
+.heading-slogan {
+    text-align: center;
+    font-family: 'Leafy';
+    font-size: 56px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    text-transform: capitalize;
+}
+.background-yellow {
+    background-color: #f4e7a1;
+}
+.background {
+    background-color: $bg-color;
+}
 
 @media (max-width: 557px) {
+    .heading-mini {
+        font-size: 30px;
+    }
     .heading {
-        font-size: 40px;
+        font-size: 35px;
+    }
+    .heading-menu {
+        font-size: 30px;
+    }
+    .heading-slogan {
+        font-size: 36px;
+    }
+}
+@keyframes scaling-shadow {
+    0% {
+        box-shadow: inset 0 0 20px $bg-color;
+        
+    }
+    100% {
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 80px #fff,
+        inset -20px 0 80px #fff,
+        inset 20px 0 300px #fff,
+        inset -20px 0 300px #fff,
+        0 0 50px #fff,
+        -10px 0 80px #fff,
+        10px 0 80px #fff;
     }
 }

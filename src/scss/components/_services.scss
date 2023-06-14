@@ -1,0 +1,29 @@
+.services {
+    overflow: hidden;
+    padding: 2rem;
+    box-sizing: border-box;
+    &__container {
+        margin: 2rem 0 ;
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    &__card {
+        border-radius: 5%;
+        display: flex;
+        padding: 1rem;
+        box-sizing: border-box;
+        box-shadow: $shadow;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        &-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 5%;
+        }
+    }
+}

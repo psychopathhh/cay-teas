@@ -5,7 +5,12 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import BestReasons from './components/BestReasons';
-import Galery from './components/Galery';
+import Gallery from './components/Gallery';
+import Menu from './components/Menu';
+import Services from './components/Services';
+import CafeGourmand from './components/CafeGourmand';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,9 +19,14 @@ function App() {
       <main>
         <Hero/>
         <About/>
+        <Gallery/>
         <BestReasons/>
-        <Galery/>
+        <Menu/>
+        <Services/>
+        <CafeGourmand />
+        <Contact/>
       </main>
+      <Footer/>
     </div>
   );
 }

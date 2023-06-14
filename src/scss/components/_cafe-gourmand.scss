@@ -1,0 +1,113 @@
+.gourmand {
+    overflow: hidden;
+    height: 90vh;
+    position: relative;
+    box-sizing: border-box;
+    background-color: $primary-text-color;
+    padding: 5rem;
+    &__headings {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    &__heading-secondary {
+        font-size: 30px !important;
+    }
+    &__heading-primary {
+        font-size: 90px !important;
+        margin: 2rem;
+    }
+    &__image {
+        filter: brightness(80%);
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        &:nth-child(1) {
+            top: 2%;
+            right: calc(50% - 100px);
+        }
+        &:nth-child(2) {
+            bottom: 15%;
+            left: 10%;
+        }
+        &:nth-child(3) {
+            top: 15%;
+            left: 10%;
+        }
+        &:nth-child(4) {
+            bottom: 15%;
+            right: 10%;
+        }
+        &:nth-child(5) {
+            top: 15%;
+            right: 10%;
+        }
+        &:nth-child(6) {
+            bottom: 2%;
+            left: calc(50% - 100px);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .gourmand {
+        padding: 2rem;
+        &__heading-secondary {
+            font-size: 20px !important;
+        }
+        &__heading-primary {
+            font-size: 60px !important;
+            margin: 1rem 2rem 2rem;
+        }
+        &__image {
+            width: 150px;
+            height: 150px;
+            &:nth-child(1) {
+                top: 2%;
+                right: calc(50% - 75px);
+            }
+            &:nth-child(2) {
+                bottom: 7%;
+                left: 3%;
+            }
+            &:nth-child(3) {
+                top: 7%;
+                left: 3%;
+            }
+            &:nth-child(4) {
+                bottom: 7%;
+                right: 3%;
+            }
+            &:nth-child(5) {
+                top: 7%;
+                right: 3%;
+            }
+            &:nth-child(6) {
+                bottom: 2%;
+                left: calc(50% - 75px);
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .gourmand {
+        &__image {
+            width: 100px;
+            height: 100px;
+            &:nth-child(1) {
+                top: 2%;
+                right: calc(50% - 50px);
+            }
+            &:nth-child(6) {
+                bottom: 2%;
+                left: calc(50% - 50px);
+            }
+        }
+    }
+}

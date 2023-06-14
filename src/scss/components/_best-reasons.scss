@@ -1,5 +1,7 @@
 .reasons {
+    overflow: hidden;
     padding: 2rem;
+    box-sizing: border-box;
     &__container {
         display: flex;
         gap: 5rem;
@@ -12,6 +14,7 @@
     &__item {
         box-shadow: $shadow;
         padding: 1.5rem;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,12 +24,12 @@
             height: 15rem;
             border-radius: 0.5rem;
         }
-        &-heading {
-            font-size: 26px;
-            color: $secondary-text-color;
-            font-family: 'Leafy';
-            font-weight: 400;
-            font-style: normal;
-        }
     }
+}
+@media (max-width: 768px) {
+    .reasons {
+        &__container {
+            gap: 2rem;
+        }
+    }    
 }

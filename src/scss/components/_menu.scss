@@ -1,0 +1,115 @@
+.menu {
+    overflow: hidden;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: $primary-text-color;
+    & > div {
+        max-width: 1440px;
+        margin: 2rem auto 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    &__heading {
+        color: $bg-color !important;
+    }
+    &__image {
+        width: 30%;
+        height: 30%;
+        box-shadow: $shadow;
+        border-radius: 5%;
+    }
+    &__container {
+        border-radius: 1rem;
+        padding: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        gap: 3rem;
+        justify-content: space-around;
+        align-items: center;
+        & > ul {
+            width: 40%;
+        }
+    }
+    &__item {
+        padding: 1rem 0;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px dashed $primary-text-color;
+        &:nth-child(1) {
+            border-top: 3px dashed $primary-text-color;
+        }
+        &-image {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            margin: 0 0.5rem 0 0;
+        }
+        &-heading {
+            color: $contrast-color;
+            font-weight: 300;
+            font-size: 36px;
+            font-family: 'Raleway Light';
+        }
+    }
+    &-reverse-0 {
+        order: 1;
+    }
+    &-reverse-1 {
+        order: 0;
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+            padding: 2rem 5rem;
+        &__container {
+            flex-direction: column;
+            & > ul {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        &__image {
+            width: 70%;
+            height: 70%;
+            margin: 0 auto;
+        }
+        &-reverse-0 {
+            order: 0;
+        }
+        &-reverse-1 {
+            order: 1;
+        }
+        &__item {
+            &-heading {
+                font-size: 30px;
+            }
+            &-image {
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
+}
+@media (max-width: 530px) {
+    .menu {
+        padding: 2rem;
+        &__container {
+            padding: 2rem 0.5rem;
+        }
+        &__image {
+            width: 70%;
+            height: 70%;
+            margin: 0 auto;
+        }
+        &__item {
+            &-heading {
+                font-family: 'Roboto Regular';
+                font-size: 20px;
+            }
+        }
+    }
+}

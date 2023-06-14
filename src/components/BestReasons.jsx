@@ -21,12 +21,12 @@ const reasons = [
 const BestReasons = () => {
   return (
     <section className='reasons'>
-      <h2 className='heading'>Why Cay-Tea's is the best place for you</h2>
+      <h2 data-aos='fade-up' className='heading'>Why Çay-Tea's is the best place for you</h2>
       <ul className='reasons__container'>
         {reasons.map(reason =>
-          <li key={reason.title} className='reasons__item'>
+          <li data-aos="zoom-in-down" key={reason.title} className='reasons__item'>
             <img src={reason.photo} alt="photo" className="reasons__item-image" />
-            <span className='reasons__item-heading'>{reason.title}</span>
+            <span className='heading-mini'>{reason.title}</span>
           </li>
         )}
       </ul>

@@ -31,6 +31,8 @@
     font-style: normal;
 }
 @font-face {
+    font-weight: 400;
+    font-style: normal;
     font-family: 'Raleway Light';
     src: url('../fonts/raleway/light/Raleway-Light.eot');
     src: local('../fonts/raleway/light/Raleway-Light'),
@@ -38,6 +40,4 @@
         url('../fonts/raleway/light/Raleway-Light.woff2') format('woff2'),
         url('../fonts/raleway/light/Raleway-Light.woff') format('woff'),
         url('../fonts/raleway/light/Raleway-Light.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
 }
